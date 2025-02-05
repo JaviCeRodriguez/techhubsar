@@ -35,7 +35,7 @@ export default function CommunityList({
   return (
     <ul
       ref={listRef}
-      className="space-y-6 overflow-y-auto max-h-[500px] lg:max-h-[calc(100vh-200px)]"
+      className="space-y-2 md:space-y-4 overflow-y-auto max-h-[500px] lg:max-h-[calc(100vh-200px)]"
     >
       {communities.map((community) => (
         <CommunityCard
