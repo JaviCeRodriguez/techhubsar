@@ -2,8 +2,8 @@
 
 import { useRef, useEffect } from "react";
 import type { Community } from "../types/community";
-import { useIsMobile } from "../hooks/useIsMobile";
 import { CommunityCard } from "./CommunityCard";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface CommunityListProps {
   communities: Community[];

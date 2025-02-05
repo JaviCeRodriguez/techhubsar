@@ -10,8 +10,8 @@ import {
   ZoomableGroup,
 } from "react-simple-maps";
 import type { Community } from "../types/community";
-import { useIsMobile } from "../hooks/useIsMobile";
 import type React from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const geoUrl = "/argentina-provinces.json";
 
@@ -106,7 +106,7 @@ export default function ArgentinaMap({
       </ComposableMap>
       {tooltipContent && (
         <div
-          className="absolute bg-popover text-popover-foreground p-2 rounded shadow-md z-10"
+          className="absolute z-10 p-2 rounded shadow-md bg-popover text-popover-foreground"
           style={{
             left: tooltipPosition.x,
             top: tooltipPosition.y,
