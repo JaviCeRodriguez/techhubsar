@@ -1,26 +1,24 @@
 export interface Member {
-  name: string
-  github?: string
-  twitter?: string
+  name: string;
+  github?: string;
+  twitter?: string;
   linkedin?: string;
 }
 
 export interface Community {
-  id: string
-  name: string
-  shortDescription: string
-  fullDescription: string
+  name: string;
+  shortDescription: string;
+  fullDescription: string;
   location: {
-    lat: number
-    lng: number
-  }
-  province: string
-  category: string
-  website?: string
-  twitter?: string
+    lat: number;
+    lng: number;
+  };
+  province: string;
+  category: string;
+  website?: string;
+  twitter?: string;
   whatsapp?: string;
   telegram?: string;
   discord?: string;
-  members: Member[]
+  members: Member[];
 }
-
